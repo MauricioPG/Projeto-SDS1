@@ -1,5 +1,5 @@
 # SDS1
-Projeto complemetar executado juntamente com o Bootcamp 4 DevSuperior
+Projeto complementar executado juntamente com o Bootcamp 4 DevSuperior
 
 Referente á Semana Dev Superior 1
 
