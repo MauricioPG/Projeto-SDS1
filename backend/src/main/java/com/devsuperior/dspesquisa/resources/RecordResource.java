@@ -1,7 +1,6 @@
 package com.devsuperior.dspesquisa.resources;
 
 import java.time.Instant;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -37,7 +36,7 @@ public class RecordResource {
 			@RequestParam(value = "min", defaultValue = "") String min,
 			@RequestParam(value = "max", defaultValue = "") String max,
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
-			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
+			@RequestParam(value = "linesPerPage", defaultValue = "0") Integer linesPerPage,
 			@RequestParam(value = "orderBy", defaultValue = "moment") String orderBy,
 			@RequestParam(value = "direction", defaultValue = "DESC") String direction
 	) {	

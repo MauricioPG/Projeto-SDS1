@@ -34,6 +34,7 @@ public class RecordService {
 		
 		Game game = gameRepository.getOne(dto.getGameId());
 		entity.setGame(game);
+		
 		entity = repository.save(entity);
 		return new RecordDTO(entity);
 	}
@@ -42,6 +43,5 @@ public class RecordService {
 	public Page<RecordDTO> findByMoments(Instant minDate, Instant maxDate, PageRequest pageRequest) {
 		return repository.findByMoments(minDate, maxDate, pageRequest).map(x -> new RecordDTO(x));
 	}
-
 
 }
