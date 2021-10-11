@@ -23,6 +23,7 @@ const initialPieData = {
 }
 
 const BASE_URL = 'https://sds1-mauriciopg.herokuapp.com';
+//const BASE_URL = 'http://localhost:8080';
 
 const Charts = () => {
     const [barChartData, setBarChartData] = useState<BarChartData[]>([]);
